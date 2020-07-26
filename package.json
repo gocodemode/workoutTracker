@@ -1,0 +1,28 @@
+{
+  "name": "workoutTracker",
+  "version": "1.0.0",
+  "description": "testDummyData",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seeds": "node seeders/seeds.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GTblue/workoutTracker.git"
+  },
+  "keywords": [],
+  "author": "Gregory Monroe II",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.3.16",
+    "morgan": "^1.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/GTblue/workoutTracker/issues"
+  },
+  "homepage": "https://github.com/GTblue/workoutTracker#readme"
+}
