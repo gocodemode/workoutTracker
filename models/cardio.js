@@ -1,12 +1,3 @@
-exercises: [
-    {
-      type: "cardio",
-      name: "Running",
-      duration: 25,
-      distance: 4
-    }
-  ]
-
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
