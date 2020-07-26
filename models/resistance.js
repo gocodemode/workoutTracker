@@ -7,28 +7,33 @@ const resistanceSchema = new Schema({
     type: {
       type: String,
       require: true,
-      trim:
+      trim: true
     },
     name: {
       type: String,
-
+      require: true,
+      trim: true
     },
     duration: {
       type: Number,
-      unique:; 
+      required: true
     },
     weight: {
         type: Number,
+        required: true
+
     },
     reps: {
         type: Number,
+        required: true
     },
     sets: {
         type: Number,
+        required: true
     },
   });
   
-  const Resistance = mongoose.model("Resistance", resistancedSchema);
+  const Resistance = mongoose.model("Resistance", resistanceSchema);
   
   module.exports = Resistance;
   
