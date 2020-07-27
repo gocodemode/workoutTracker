@@ -4,33 +4,22 @@ const Schema = mongoose.Schema;
 
 const cardioSchema = new Schema({
 
-    // CODE HERE
     type: {
-        type: String,
-        require: true,
-        trim: true
+        type: "Cardio",
+        require: true
     },
     name: {
         type: String,
-        reuiqre: true,
+        require: "Name of exercise is required",
         trim: true
     },
     duration: {
         type: Number,
-        require: true
+        require: "Duration of workout is required"
     },
-    weight: {
+    distance: {
         type: Number,
-        require: true
-    },
-    reps: {
-        type: Number,
-        require: true
-    },
-    sets: {
-        type: Number,
-        require: true
-    },
+        require: "Distance is required"
 });
 
 const Cardio = mongoose.model("Cardio", cardioSchema);
