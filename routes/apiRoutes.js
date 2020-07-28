@@ -28,8 +28,16 @@ router.put("/api/workouts/:id", (req, res) => {
     const id = req.params.id;
     db.Workout.findByIdAndUpdate(id, {$push: {"exercises": req.body}},{"new": true}).then((updatedWorkout) => {
         res.json(updatedWorkout);
+    }).catch(err => {
+        console.log(err);
+        res.json({
+            error: true,
+            data: null,
+            message: "Unable to create new workout."
+        });
     });
 });
+
 //Create a new workout
 router.post("/api/workouts", (req, res) => {
     db.Workout.create(req.body).then(createdWorkout => {
