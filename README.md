@@ -19,7 +19,7 @@
 
 ## Usage
 
-#### ![Heroku Link for Deployed Application:]("https://standard-workout-tracker.herokuapp.com/")
+[Heroku Link for Deployed Application:]("https://standard-workout-tracker.herokuapp.com/")
 
 ![workout-one](./Images/workout-one.jpg)
 ![workout-two](./Images/workout-two.jpg)
